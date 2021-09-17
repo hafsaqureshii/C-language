@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+int main(void)
+{
+float a,b,c,d,total,avg,per;
+
+printf("\t\t\t'MARKSHEET'");
+printf("\n\t\t\tNAME: 'HAFSA QURESHI'");
+printf("\n\t\t\tSECTION: 'A'");
+printf("\n\t\t\tINSTITUTE: 'NAVTCC'");
+
+printf("\n\t\t\tENTER PYTHON MARKS:");
+scanf("%f",&a);
+
+printf("\n\t\t\tENTER C-LANGUAGE MARKS:");
+scanf("%f",&b);
+
+printf("\n\t\t\tENTER B.E MARKS:");
+scanf("%f",&c);
+
+printf("\n\t\t\tENTER ARDUINO MARKS:");
+scanf("%f",&d);
+
+total=(a+b+c+d);
+printf("\n\t\t\tOBTAINED MARKS:%F",total);
+
+avg=(total/4);
+printf("\n\t\t\tAVERAGE MARKS:%f",avg);
+
+per=(total/400)*100;
+printf("\n\t\t\tPERCENTAGE:%f",per);
+
+if(per>=90)
+{
+    printf("\n\t\t\t'A+'");
+}
+else if(per>=80)
+{
+    printf("\n\t\t\t'A'");
+}
+else if(per>=70)
+{
+    printf("\n\t\t\t'A-'");
+}
+else if(per>=60)
+{
+    printf("\n\t\t\t'B'");
+}
+else if(per>=50)
+{
+    printf("\n\t\t\t'pass'");
+}
+else
+{
+    printf("\n\t\t\t'fail'");
+}
+}
